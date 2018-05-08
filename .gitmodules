@@ -1,0 +1,3 @@
+[submodule "libffcall"]
+	path = libffcall
+	url = https://git.savannah.gnu.org/git/libffcall.git
