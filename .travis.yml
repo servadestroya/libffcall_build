@@ -1,0 +1,8 @@
+language: cpp
+compiler:
+    - gcc
+sudo: false
+
+install: 
+    - mkdir ./build
+    - chmod +x ./compile.sh && ./compile.sh ./build ./libffcall
