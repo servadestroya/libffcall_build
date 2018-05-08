@@ -3,6 +3,6 @@ compiler:
     - gcc
 sudo: false
 
-install: 
+script: 
     - mkdir ./build
     - chmod +x ./compile.sh && ./compile.sh ./build ./libffcall
