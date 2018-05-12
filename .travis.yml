@@ -2,6 +2,10 @@ language: cpp
 compiler:
     - gcc
 sudo: false
+addons:
+    apt:
+        packages:
+        - lib32gcc-5-dev
 
 script: 
     - mkdir ./build
