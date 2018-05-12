@@ -2,6 +2,7 @@
 
 SOURCE_DIR="$1"
 GIT_DIR="$2"
+CONFIGURE_EXTRA_ARGS=("${@:(3)}") # The argument list, except the first two
 GIT_VERSION_FILE="$GIT_DIR/VERSION"
 
 compile() {
@@ -10,7 +11,7 @@ compile() {
     mkdir "$build_dir" &&
     (
         cd "$build_dir" &&
-        ../configure --cache-file=config.cache &&
+        ../configure --cache-file=config.cache "${CONFIGURE_EXTRA_ARGS[@]}" &&
         make &&
         make check
     )
