@@ -5,4 +5,4 @@ sudo: false
 
 script: 
     - mkdir ./build
-    - chmod +x ./compile.sh && ./compile.sh ./build ./libffcall
+    - chmod +x ./compile.sh && ./compile.sh ./build ./libffcall --host=i486-unknown-linux  CC="gcc -m32" CXX="g++ -m32"
