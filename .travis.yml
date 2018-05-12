@@ -5,6 +5,7 @@ sudo: false
 addons:
     apt:
         packages:
+        - lib32gcc-5-dev
         - libc6-dev-i386
 
 script: 
